@@ -1,0 +1,201 @@
+/*================================================================================================================
+        DEFAULT VALUES:
+        Font Family                 :   "Roboto Condensed", sans-serif
+        
+        Greenish Blue               :   #3742fa or rgb(55, 66, 250)    (buttons, Icons, Links, lines & Backgrounds)
+        Steel Gray                  :   #41464b     (Headings)
+        Blue Bayoux                 :   #64707b     (paragraphs)
+        white                       :   #fff        (text with black backgrounds)
+        Black                       :   #000        ()
+        hover                       :   #ffa502 or rgb(255, 165, 2)     (hover)
+=================================================================================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed';
+   
+
+}
+.payment-container{
+    margin-block: 0;
+    background-color: #dfe6e9;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.payment-container-upper{
+    text-align: center; 
+    padding-top: 40px;
+    color: rgb(6, 6, 6);
+}
+#payment-container-form-inner{
+    width: 80%;
+    border: none;
+}
+
+.payment-container-form-intro{
+    color: #000;
+}
+
+.payment-container-upper{
+    padding-top: 40px;
+    color: whitesmoke;
+}
+.paymentdata-container{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 60vw;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 40px;
+    margin-inline: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 25px;
+   
+}
+
+.payment-data-prev-info-options {
+    border-bottom: 0.5px solid rgb(190, 190, 190, 0.7);
+    padding-block: 10px;
+}
+
+
+.payment-data-user-info {
+    align-items: center;
+}
+
+.payment-data-user-options {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.paymentdata-user-info {
+    color: #53585d;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+
+
+/* packaages */
+
+
+
+
+.packages-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+input[type="radio"]{
+
+    -webkit-appearance: none;
+}
+label{
+   
+    width: 240px;
+    padding-top: 10px;
+    border: 1px solid #3742fa;
+    color: #000;
+    font-size: 13px;
+   
+   
+}
+label:hover{
+    border: 1px solid #3742fa;
+    color: #ffffff;
+    background-color: #3742fa;
+   
+}
+
+input[type="radio"]:checked + label {
+    border: 1px solid #3742fa;
+    color: #ffffff;
+    background-color: #3742fa;
+     
+}
+
+
+/* payment */
+
+.payment-btn {
+    display: block;
+    text-align: center;
+}
+
+.paymentdata-payment-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #41464b;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.paymentdata-payment-button:hover {
+    color: #ffffff;
+    border: 1px solid #ffa502;
+    background-color: #ffa502;
+}
+
+.paymentdata-payment-button:active {
+    color: #ffffff;
+    border: 1px solid #3742fa;
+    background-color: #3742fa;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .paymentdata-container{
+       
+        width: 90vw;
+        margin-inline: auto;
+       
+    }
+    .packages-container{
+        display: block;
+        text-align: center;
+    }
+    label{
+   
+        width: 240px;
+        margin-inline: auto;
+        margin-top: 10px;
+        padding-top: 10px;
+        border: 1px solid #3742fa;
+        color: #000;
+        font-size: 13px;
+       
+       
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1300px) {
+    .paymentdata-container{
+       
+        width: 80vw;
+        margin-inline: auto;
+       
+    }
+   
+    label{
+   
+        width: 20vw;
+        margin-inline: auto;
+        margin-top: 10px;
+        padding-top: 10px;
+        border: 1px solid #3742fa;
+        color: #000;
+        font-size: 13px;
+       
+       
+    }
+}
